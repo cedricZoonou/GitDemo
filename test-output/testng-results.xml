@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-02T15:46:33 GMT" name="Default suite" finished-at="2022-11-02T15:46:44 GMT" duration-ms="11644">
+    <groups>
+    </groups>
+    <test started-at="2022-11-02T15:46:33 GMT" name="Default test" finished-at="2022-11-02T15:46:44 GMT" duration-ms="11644">
+      <class name="SeleniumGrid.GoogleTest">
+        <test-method signature="HomepageTest()[pri:0, instance:SeleniumGrid.GoogleTest@2ab4bc72]" started-at="2022-11-02T15:46:33 GMT" name="HomepageTest" finished-at="2022-11-02T15:46:38 GMT" duration-ms="4908" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [999753528ccc35e69f660cf77b8d6c72, sendKeysToElement {id=7c7b7f41-6484-4d9c-b649-f4bb71443b7d, value=[Ljava.lang.CharSequence;@67110f71}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\CEDRIC~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54761}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.51:4444/sess..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on Windows 10 (999753528ccc35e69f660cf77b8d6c72)] -> name: q]
+Session ID: 999753528ccc35e69f660cf77b8d6c72]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.88)
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [999753528ccc35e69f660cf77b8d6c72, sendKeysToElement {id=7c7b7f41-6484-4d9c-b649-f4bb71443b7d, value=[Ljava.lang.CharSequence;@67110f71}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\CEDRIC~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54761}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.1.51:4444/sess..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: chrome on Windows 10 (999753528ccc35e69f660cf77b8d6c72)] -> name: q]
+Session ID: 999753528ccc35e69f660cf77b8d6c72
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+at SeleniumGrid.GoogleTest.HomepageTest(GoogleTest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomepageTest -->
+      </class> <!-- SeleniumGrid.GoogleTest -->
+      <class name="SeleniumGrid.FirefoxTest">
+        <test-method signature="HomepageTest()[pri:0, instance:SeleniumGrid.FirefoxTest@f1da57d]" started-at="2022-11-02T15:46:38 GMT" name="HomepageTest" finished-at="2022-11-02T15:46:44 GMT" duration-ms="6613" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <input class="gLFyf gsfi" name="q" type="text"> is not reachable by keyboard
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [8bad7219-f989-42ed-9174-6a0583ada87c, sendKeysToElement {id=fc558e4f-ec20-47f5-a080-6b541e20e752, value=[Ljava.lang.CharSequence;@2015b2cd}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 106.0.3, moz:accessibilityChecks: false, moz:buildID: 20221030091646, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16640, moz:profile: C:\Users\CEDRIC~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidi: ws://192.168.1.51:4444/sess..., se:cdp: ws://192.168.1.51:4444/sess..., setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[RemoteWebDriver: firefox on Windows 10 (8bad7219-f989-42ed-9174-6a0583ada87c)] -> name: q]
+Session ID: 8bad7219-f989-42ed-9174-6a0583ada87c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <input class="gLFyf gsfi" name="q" type="text"> is not reachable by keyboard
+Build info: version: '4.5.3', revision: '4b786a1e430'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [8bad7219-f989-42ed-9174-6a0583ada87c, sendKeysToElement {id=fc558e4f-ec20-47f5-a080-6b541e20e752, value=[Ljava.lang.CharSequence;@2015b2cd}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 106.0.3, moz:accessibilityChecks: false, moz:buildID: 20221030091646, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16640, moz:profile: C:\Users\CEDRIC~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: Windows 10, proxy: Proxy(), se:bidi: ws://192.168.1.51:4444/sess..., se:cdp: ws://192.168.1.51:4444/sess..., setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[RemoteWebDriver: firefox on Windows 10 (8bad7219-f989-42ed-9174-6a0583ada87c)] -> name: q]
+Session ID: 8bad7219-f989-42ed-9174-6a0583ada87c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+at SeleniumGrid.FirefoxTest.HomepageTest(FirefoxTest.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomepageTest -->
+      </class> <!-- SeleniumGrid.FirefoxTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

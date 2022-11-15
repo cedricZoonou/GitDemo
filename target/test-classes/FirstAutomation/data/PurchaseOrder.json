@@ -1,0 +1,14 @@
+[
+    {
+        "email" : "john.smith@aol.com",
+        "password": "Password1!",
+        "product" : "ADIDAS ORIGINAL"
+    },
+
+
+    {
+        "email": "benkenobi@aol.com",
+	    "password": "Password2",
+	    "product": "ZARA COAT 3"
+    }
+]
