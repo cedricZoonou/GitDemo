@@ -27,6 +27,17 @@ public class ErrorValidationTest extends BaseTest{
 	
 	}
 	
+	@Test(groups= {"ErrorHandling"}, retryAnalyzer=FirstAutomation.TestComponents.Retry.class)
+	public void LoginErrorValidation2() throws IOException, InterruptedException { 
+	
+	
+	
+	ProductCatalogue productCatalogue =	landingPage.loginAplication("bob.smith@aol.com", "Password");
+	Assert.assertEquals("Incorrect email or password.",landingPage.getErrorMessage());
+	
+	
+	}
+	
 	@Test
 	public void ProductErrorValidation() throws IOException 
 	{
